@@ -1,0 +1,34 @@
+graph Concepts {
+  mode=KK;
+  splines=true;
+  overlap=orthoyx;
+  
+  // node declarations
+  
+  function [label="Function"];
+  homomorphism [label="homomorphism"];
+  map [label="map"];
+  mapping [label="mapping"];
+  morphism [label="morphism"];
+  operation [label="operation"];
+  operator [label="operator"];
+  transformation [label="Transformation"];
+
+  // edge declarations
+  
+  function -- homomorphism;
+  function -- map;
+  function -- mapping;
+  function -- morphism; 
+  function -- operation;
+  function -- operator;
+  function -- transformation;
+  hommorphism -- morphism;
+  map -- mapping;
+  map -- transformation;
+  mapping -- transformation;
+  operation -- operator;
+  operation -- transformation;
+
+}
+  
